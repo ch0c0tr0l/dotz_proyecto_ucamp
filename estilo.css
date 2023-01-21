@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Signika Negative', sans-serif;    
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.726),blue),
+    url('img/fondo.jpg');
+    background-size: cover;
+    min-height: 500px;
+    height: 100vh;
+    color: #fff;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+.navegador{
+    --state-clo:scale(0);
+    --state-hambur:scale(1);
+    --state-menu:translate(-100%);
+    padding: 40px auto;
+    color: aliceblue;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+}
+.navegador:target{
+    --state-clo:scale(1);
+    --state-hambur:scale(0);
+    --state-menu:translate(0)
+}
+.logo{
+    width: 200px;
+    z-index: 1;
+}
+.nav_hambur,
+.nav_clo{
+    cursor: pointer;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    transition: .4s transform;
+}
+
+.nav_hambur{
+    transform: var(--state-hambur);
+}
+.nav_clo{
+    transform: var(--state-clo);
+}
+.nav_icono{
+    width: 40px;
+}
+.nave_links{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    display: grid;
+    align-content: center;
+    gap: 20px; 
+    padding-left: 5%;
+    transform: var(--state-menu);
+    transition: .3s transform;
+}
+.nave_item{
+    list-style: none;
+}
+.nave_link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.nave_link:hover{
+    color: orange;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+@media(min-width:768px){
+    .navegador{
+        --state-clo:scale(0);
+        --state-hambur:scale(0);
+        --state-menu:translate(0);
+        }
+    .navegador:target{
+        --state-clo:scale(0); 
+    }
+    .nave_links{
+        background-color:unset;
+        position: unset;
+        border-radius: 30px;
+        border-color: #fff;
+        border-style: solid;
+        padding: 0;
+        gap: 15px; 
+        padding-left: 5%;
+        transform: unset;
+        grid-auto-flow: column;
+        grid-column: -2/-1;
+        grid-row: 1/2;
+    }
+    .nave_link{
+        color:#fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    .nave_link:hover{
+        color:orange;
+        text-decoration: none;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+
+    }
+}
