@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
     <title>DOTZ</title>
+    <script src="https://kit.fontawesome.com/73806b019e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="hero">
@@ -27,7 +28,7 @@
                     <a href="#" class="nave_link">Contacto</a>
                 </li>
                 <li class="nave_item">
-                    <a href="#" class="nave_link">Iniciar sesion</a>
+                    <a href="#" class="nave_link">Login</a>
                 </li>
             </ul>
             <a href="#nav" class="nav_hambur">
@@ -38,62 +39,128 @@
             </a>
         </nav>
     </header>
-            
-            <div class="contenido">
-                <div class="jumbo">
-                    <div class="jumbo_img">
-                        <img src="./img/jumbo.jpg"  width="40px"class="imagen_inicio"></a>
+    <div class="clearfix">
+
+    </div>
+    <br>
+    <main class="contenido">
+        <div class="jumbo">
+            <div class="jumbo_conte">
+                <h1 class="titulo_jum">Lleva tus ideas al siguiente nivel</h1>
+                <p class="cont_jum">Ven y cuentanos acerca de tu proyecto, te ayudamos a realizarlo</p>
+                <form action="#" class="formu">
+                    <div class="form_item">
+                        <input type="text" name="texto" id="" placeholder="Te Escuchamos" class="input">
                     </div>
-                    <div class="jumbo_conte">
-                        <p>Algo de texto</p>
-                        <form action="#">
-                            <input type="text" name="texto" id="" placeholder="Te Escuchamos">
-                            <input type="button" value="Enviar comentario">
-                        </form>
+                    <div class="form_item">
+                        <input type="button" value="Enviar comentario" class="btn_enviar">
                     </div>
-                </div>
-                <div class="catalogo">
-                    <div class="card">
-                        <img src="./img/soporte.png"  width="40px" alt="">
-                    </div>
-                    <div class="card">
-                        <img src="./img/cableado.jpeg"  width="40px" alt="">
-                    </div>
-                    <div class="card">
-                        <img src="./img/desarrollo.jpg"  width="40px" alt="">
-                    </div>
-                    <div class="card">
-                        <img src="./img/casa.jpg"  width="40px" alt="">
-                    </div>
-                    <div class="card">
-                        <img src="./img/cctv.jpg"   width="40px" alt="">
-                    </div>
-                </div>
-                <div class="valores">
-                    <div class="card">
-                        <P>MISION</P>
-                    </div>
-                    <div class="card">
-                        <P>VISION</P>
-                    </div>
-                    <div class="card">
-                        <P>VALORES</P>
-                    </div>
-                </div>
+                </form>
             </div>
-        </main>
+            <div class="jumbo_img">
+                <img src="./img/jumbo.jpg"  class="imagen_inicio"></a>
+            </div>
+        </div>
+        <div class="clearfix">
+
+        </div>
+        <br>
+        <h1 id="nombre_cata" class="container">Catalogo de servicios</h1>
+        <div id="itemscata">
+        <div class="catalogo" id="cat_1">
+            <div class="card" id="card_1">
+                <img src="./img/soporte.png"  class="cat" alt="">
+            </div>
+            <div class="flechas">
+                <a href="#cat_5">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a href="#cat_2">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="catalogo" id="cat_2">
+            <div class="card" id="card_2">
+                <img src="./img/cableado.jpeg" class="cat" alt="">
+            </div>
+            <div class="flechas">
+                <a href="#cat_1">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a href="#cat_3">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="catalogo" id="cat_3">
+            <div class="card"  id="card_3">
+                <img src="./img/desarrollo.jpg" class="cat"  alt="">
+            </div>
+            <div class="flechas">
+                <a href="#cat_2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a href="#cat_4">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="catalogo" id="cat_4">
+            <div class="card"  id="card_4">
+                <img src="./img/casa.jpg" class="cat"  alt="">
+            </div>
+            <div class="flechas">
+                <a href="#cat_3">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a href="#cat_5">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="catalogo" id="cat_5">
+            <div class="card"  id="card_5">
+                <img src="./img/cctv.jpg"  class="cat"  alt="">
+            </div>
+            <div class="flechas">
+                <a href="#cat_4">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a href="#cat_1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+        </div>
+    </div>
+    <div class="clearfix">
+
+    </div>
+    </div>
+    <br>
+    <h1 id="nombre_cata" class="container">Valores de la empresa</h1>
+        <div class="valores">
+            <div class="card_v">
+                <P>MISION</P>
+            </div>
+            <div class="card_v">
+                <P>VISION</P>
+            </div>
+            <div class="card_v">
+                <P>VALORES</P>
+            </div>
+        </div>
+    </main>
+    <br>
         <footer>
             <div class="enlaces">
                 <div class="redes_sociales">
-                    <img src="./img/FBLOGO.png"  width="40px"></img>
-                    <img src="./img/WHLOGO.png"  width="40px" alt="">
+                    <img src="./img/FBLOGO.png"  class="img_foot"></img>
+                    <img src="./img/WHLOGO.png"  class="img_foot" alt="">
                 </div>
                 <div class="telefono">
                     <p><label for="telefono">477-495-61-32</label></p>
                 </div>
             </div>
         </footer>
-
- 
 </body>
 </html>
